@@ -22,7 +22,8 @@
 }
 
 .home,
-.away {
+.away,
+.teamScore{
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -43,17 +44,20 @@
 
 .home__name,
 .away__name,
-.down__title,
+.team_name,
+/* .down__title,
 .toGo__title,
 .ballOn__title,
-.quarter__title {
+.quarter__title,  */
+.data_title {
   text-transform: uppercase;
   font-size: 3rem;
   padding: 2rem;
 }
 
 .home__score,
-.away__score {
+.away__score,
+.team_score {
   font-family: "Ozone";
   font-size: 7rem;
   width: 90%;
@@ -73,27 +77,29 @@
   border-radius: 6px;
 }
 
-.bottomRow {
+.bottomRow{
   display: flex;
   justify-content: space-around;
   place-items: center;
   height: 20rem;
 }
 
-.down,
+/* .down,
 .toGo,
 .ballOn,
-.quarter {
+.quarter, */
+.gameData {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   place-items: center;
 }
 
-.down__value,
+/* .down__value,
 .toGo__value,
 .ballOn__value,
-.quarter__value {
+.quarter__value, */
+.data_value {
   font-family: "Ozone";
   font-size: 5rem;
   color: var(--red);
@@ -116,7 +122,8 @@
 .homeButtons__touchdown,
 .homeButtons__fieldGoal,
 .awayButtons__touchdown,
-.awayButtons__fieldGoal {
+.awayButtons__fieldGoal
+ {
   margin: 1rem;
   border-radius: 4px;
 }
